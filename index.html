@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trikaya Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cari Produk</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Daftar</a></li>
+                <li><a href="#">Masuk</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Berbelanja Keperluan Gak Perlu Ribet<br> Hanya Di <span>Trikaya Mart</span></span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolore veniam aut nemo 
+                facilis reiciendis soluta harum odio quo molestiae dolor, dolorem iure quod nihil distinctio 
+                aliquid quidem exercitationem ipsa.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/beeKella1.png" class="beeKella">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/bee1.png" onclick="imgSlider('img/beeKella1.png')"></li>
+            <li><img src="img/bee2.png" onclick="imgSlider('img/beeKella2.png')"></li>
+            <li><img src="img/bee3.png" onclick="imgSlider('img/beeKella3.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/sabunmadupropolis-100631168220779"><img src="img/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/sabunmadupropolis/"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/whatsApp.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.beeKella').src = anything;
+        }
+    </script>
+</body>
+</html>
