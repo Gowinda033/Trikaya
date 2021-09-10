@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trikaya Mart</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,20 +11,24 @@
         <div class="circle"></div>
         <header>
             <a href="#" ><img src="img/logo.png" class="logo"></a>
-            <ul>
+            <div class="toogle" onclick="toogleMenu();"></div>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Cari Produk</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Daftar</a></li>
-                <li><a href="#">Masuk</a></li>
+                <!-- <li><a href="#">Daftar</a></li>
+                <li><a href="#">Masuk</a></li> -->
             </ul>
         </header>
         <div class="content">
             <div class="textBox">
-                <h2>Berbelanja Keperluan Gak Perlu Ribet<br> Hanya Di <span>Trikaya Mart</span></span></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolore veniam aut nemo 
-                facilis reiciendis soluta harum odio quo molestiae dolor, dolorem iure quod nihil distinctio 
-                aliquid quidem exercitationem ipsa.</p>
+                <h2>Berbelanja Keperluan Gak Usah Ribet, Hanya Di<br> <span>Trikaya Mart</span></span></h2>
+                <p>Trikaya Mart adalah salah satu situs web perdagangan elektronik di Indonesia. 
+                    Trikaya Mart adalah produk PT Trikaya yang merupakan
+                    perusahaan baru bidang digital yang didirikan pada tahun 2021. 
+                    Trikaya Mart bekerja sama dengan penyedia jasa teknologi, mitra logistik, 
+                    perbankan serta mitra dagang dengan standar tertentu untuk menciptakan 
+                    sistem back-end yang bisa memenuhi kebutuhan pengguna Trikaya Mart.</p>
                 <a href="#">Learn More</a>
             </div>
             <div class="imgBox">
@@ -44,6 +49,12 @@
     <script type="text/javascript">
         function imgSlider(anything){
             document.querySelector('.beeKella').src = anything;
+        }
+        function toogleMenu(){
+            var menutoogle = document.querySelector('div.toogle');
+            var navigation = document.querySelector('.navigation')
+            menutoogle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>
 </body>
