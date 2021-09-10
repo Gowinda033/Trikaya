@@ -33,6 +33,9 @@ header ul {
   position: relative;
   display: flex;
 }
+.toogle {
+  display: none;
+}
 header ul li {
   list-style: none;
 }
@@ -87,7 +90,7 @@ header ul li a {
   margin-top: 50px;
 }
 .content .imgBox .beeKella {
-  max-width: 500px;
+  max-width: 460px;
   box-shadow: 4px 4px 8px #000000;
 }
 .thumb {
@@ -141,5 +144,110 @@ header ul li a {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
-  box-shadow: 4px 4px 8px #000000;
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 20px 20;
+  }
+  header .logo {
+    position: relative;
+    max-width: 80px;
+  }
+  header ul {
+    display: none;
+  }
+  .toogle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(img/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 11;
+  }
+  .toogle.active {
+    position: fixed;
+    right: 50px;
+    background: url(img/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+  header ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  section {
+    padding: 20px 20px 180px;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox {
+    max-width: 100%;
+  }
+  .content .textBox h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  .circle {
+    clip-path: circle(350px at center bottom);
+  }
+  .content .imgBox {
+    justify-content: center;
+  }
+  .content .imgBox .beeKella {
+    max-width: 400px;
+  }
+  .sci {
+    background-color: #017143;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+@media (max-width: 640px) {
+  .content .imgBox {
+    justify-content: center;
+  }
+  .content .imgBox .beeKella {
+    max-width: 300px;
+  }
+  .content .textBox p {
+    display: none;
+  }
+  .content .textBox h2 {
+    margin: 5px 0;
+  }
+  .thumb img {
+    max-width: 70px;
+  }
+  header {
+    padding: 40px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 60px;
+  }
 }
