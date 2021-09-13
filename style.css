@@ -53,6 +53,9 @@ header ul li a {
   justify-content: space-between;
   align-items: center;
 }
+p {
+  word-break: break-word;
+}
 .content .textBox {
   position: relative;
   max-width: 600px;
@@ -230,6 +233,7 @@ header ul li a {
 @media (max-width: 640px) {
   .content .imgBox {
     justify-content: center;
+    width: fit-content;
   }
   .content .imgBox .beeKella {
     max-width: 300px;
